@@ -1,5 +1,6 @@
 # JKFLIPFLOP-USING-IF-ELSE
-
+# Name: Shreedhar Kumar K.J
+# RegisterNumber: 212224230265
 **AIM:** 
 
 To implement  JK flipflop using verilog and validating their functionality using their functional tables
@@ -58,13 +59,6 @@ endmodule
 
 
 ```
-
-
-
-Name: Shreedhar Kumar K.J
-
-RegisterNumber: 212224230265
-
 
 **RTL LOGIC FOR FLIPFLOPS**
 ![Screenshot 2024-12-11 184010](https://github.com/user-attachments/assets/941d830a-5564-47da-ace8-013413dd65f6)
