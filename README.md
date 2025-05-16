@@ -1,4 +1,4 @@
-# JKFLIPFLOP-USING-IF-ELSE
+# EXP:07 JKFLIPFLOP-USING-IF-ELSE
 # Name: Shreedhar Kumar K.J
 # RegisterNumber: 212224230265
 **AIM:** 
