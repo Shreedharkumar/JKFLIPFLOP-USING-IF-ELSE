@@ -1,6 +1,9 @@
-# EXP:07 JKFLIPFLOP-USING-IF-ELSE
-# Name: Shreedhar Kumar K.J
-# RegisterNumber: 212224230265
+**Name: SHREEDHAR KUMAR K.J**
+
+**REGISTER NO: 212224230265**
+
+# EX NO: 4 - IMPLEMENTATION OF JKFLIPFLOP 
+
 **AIM:** 
 
 To implement  JK flipflop using verilog and validating their functionality using their functional tables
@@ -33,45 +36,69 @@ By using three variable K-Map, we can get the simplified expression for next sta
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
-**Procedure**
+**PROCEDURE**
 
-/* write all the steps invloved */
+### 1. Open Quartus Software
+Launch **Quartus Prime** on your system.
+
+### 2. Create a New Project
+- Navigate to **File > New Project Wizard**.
+- Set your **project directory**, **project name**, and **top-level entity name**.
+- Add your **Verilog (.v)** or **VHDL (.vhd)** source file.
+- Select the correct **FPGA device** based on your target board.
+
+### 3. Add Design Code
+- Open your top-level module (e.g., `main.v`).
+- Paste or write your Verilog/VHDL design.
+
+### 4. Compile the Design
+- Go to **Processing > Start Compilation**.
+- Wait until the compilation process is complete.
+- Resolve any errors or warnings if present.
+
+### 5. Generate RTL Schematic
+- Navigate to **Tools > Netlist Viewers > RTL Viewer**.
+- View the generated RTL schematic.
+- Save the schematic using **File > Export** (as image or PDF).
+
+### 6. Assign I/O Pins
+- Open **Assignments > Pin Planner**.
+- Assign FPGA pins to your module’s inputs and outputs.
+- Click **Save** once done.
+
+### 7. Create Waveform for Simulation
+- Go to **File > New > Other Files > Vector Waveform File (.vwf)**.
+- Click **Edit > Insert > Insert Node or Bus**.
+- Select all input and output signals to monitor.
+
+### 8. Set Simulation Parameters
+- Define end time using **Edit > End Time** (e.g., `1 us`).
+- Apply different **input combinations** on the waveform.
+
+### 9. Run Functional Simulation
+- Go to **Processing > Start Simulation**.
+- The **timing diagram** (simulation output) will be displayed.
+
+### 10. Save the Timing Diagram
+- Save the waveform for future reference.
+- Export the timing diagram image via **File > Export Image**.
+   
 
 **PROGRAM**
 
-```
-module jkff(j,k,clk,q,qbar);
-input j,k,clk;
-output reg q,qbar;
-initial 
-begin
-q=1'b0;
-q=1'b1;
-end 
+![Screenshot 2025-04-21 102549](https://github.com/user-attachments/assets/a12f441d-d886-4cf9-8743-52f40290cb3b)
 
-always @(posedge clk)
-begin 
-q<=(j&~q)|(~k&q);
-qbar<=~q;
-end
-endmodule
-
-
-
-```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2024-12-11 184010](https://github.com/user-attachments/assets/941d830a-5564-47da-ace8-013413dd65f6)
 
+![Screenshot 2025-04-21 102702](https://github.com/user-attachments/assets/f60b1ed7-b31d-498d-9b1e-67c7a940edd7)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![Screenshot (62)](https://github.com/user-attachments/assets/f04c5f6f-b7b0-4b0a-8bb4-1fd0afe1fc34)
+![Screenshot 2025-04-21 103217](https://github.com/user-attachments/assets/1c8d53d9-8065-4d8e-8c8f-76e7873a89b2)
 
 
+**RESULTS**
 
-
-**RESULTS:**
-
-Thus,implementation of JK flipflop using verilog and validating their functionality using their functional tables
+JK flipflop is implemented using verilog and their functionality using their functional tables is validated.
